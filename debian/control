@@ -1,15 +1,22 @@
-Source: template-repository
-Section: unknown
+Source: libfile-keepass-perl
+Section: perl
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Build-Depends: debhelper (>= 8)
+Build-Depends-Indep: perl, libcrypt-rijndael-perl, libxml-parser-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Jonas Genannt <jonas.genannt@capi2name.de>
+Standards-Version: 3.9.4
+Homepage: http://search.cpan.org/dist/File-KeePass/
+Vcs-Git: git://git.debian.org/pkg-perl/packages/libfile-keepass-perl.git
+Vcs-Browser: http://git.debian.org/?p=pkg-perl/packages/libfile-keepass-perl.git;a=summary
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+
+Package: libfile-keepass-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends}, libcrypt-rijndael-perl, libxml-parser-perl
+Description: interface to KeePass V1 and V2 database files
+ Perl interface to KeePass (KeePassX) V1 and V2 database files. File::KeePass
+ provides methods to create/write/update KeePass files.
+ .
+ For more information about KeePassX please have a look at the keepassx package
+ in Debian.
