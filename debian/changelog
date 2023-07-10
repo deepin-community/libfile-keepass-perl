@@ -1,5 +1,22 @@
-template-repository (1.0-1) unstable; urgency=medium
+libfile-keepass-perl (2.03-1.1) unstable; urgency=medium
 
-  * Initial release
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Holger Levsen <holger@debian.org>  Sat, 02 Jan 2021 01:38:24 +0100
+
+libfile-keepass-perl (2.03-1) unstable; urgency=low
+
+  * New Upstream Version
+  * Bumped Standards Version
+  * d/control: updated to new V2 Interface
+  * d/copyright: updated URL and format to 1.0
+  * d/control: added libxml-parser-perl as depend/build depend
+
+ -- Jonas Genannt <jonas.genannt@capi2name.de>  Mon, 08 Oct 2012 21:59:14 +0200
+
+libfile-keepass-perl (0.03-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #634717)
+
+ -- Jonas Genannt <jonas.genannt@capi2name.de>  Fri, 22 Jul 2011 19:59:20 +0200
